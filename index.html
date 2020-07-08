@@ -226,151 +226,152 @@
         <i class="settings-close fa fa-times"></i>
         <ul class="nav nav-tabs" id="setting-panel" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab"
-              aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+            <a class="nav-link" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab"
+              aria-controls="todo-section" aria-expanded="true">MESSAGES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab"
-              aria-controls="chats-section">CHATS</a>
+            <a class="nav-link active" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab"
+              aria-controls="chats-section">UPDATES</a>
           </li>
         </ul>
         <div class="tab-content" id="setting-content">
-          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel"
+          <div class="tab-pane fade scroll-wrapper" id="todo-section" role="tabpanel"
             aria-labelledby="todo-section">
-            <div class="add-items d-flex px-3 mb-0">
-              <form class="form w-100">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
-                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task-todo">Add</button>
-                </div>
-              </form>
-            </div>
-            <div class="list-wrapper px-3">
-              <ul class="d-flex flex-column-reverse todo-list">
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Team review meeting at 3.00 PM
-                    </label>
+            <div class="card">
+              <div class="card-body">
+                  <h4 class="card-title">Messages</h4>
+                  <div class="preview-list">
+                      <div class="preview-item border-bottom px-0">
+                          <div class="preview-thumbnail">
+                              <img src="images/faces/face6.jpg" alt="image" class="rounded-circle">
+                          </div>
+                          <div class="preview-item-content d-flex flex-grow">
+                              <div class="flex-grow">
+                                  <h6 class="preview-subject">Richard Joy
+                                      <span class="float-right small">
+                                          <span class="text-muted pr-3">13.06.2017</span>
+                                      </span>
+                                  </h6>
+                                  <p>Thanks for the support!</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="preview-item border-bottom px-0">
+                          <div class="preview-thumbnail">
+                              <img src="images/faces/face8.jpg" alt="image" class="rounded-circle">
+                          </div>
+                          <div class="preview-item-content d-flex flex-grow">
+                              <div class="flex-grow">
+                                  <h6 class="preview-subject">William Alex
+                                      <span class="float-right small">
+                                          <span class="text-muted pr-3">08.07.2017</span>
+                                      </span>
+                                  </h6>
+                                  <p>Meeting is postponed</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="preview-item border-bottom px-0">
+                          <div class="preview-thumbnail">
+                              <img src="images/faces/face9.jpg" alt="image" class="rounded-circle">
+                          </div>
+                          <div class="preview-item-content d-flex flex-grow">
+                              <div class="flex-grow">
+                                  <h6 class="preview-subject">David Grey
+                                      <span class="float-right small">
+                                          <span class="text-muted pr-3">15.07.2017</span>
+                                      </span>
+                                  </h6>
+                                  <p>Please approve the request</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="preview-item border-bottom px-0">
+                          <div class="preview-thumbnail">
+                              <img src="images/faces/face10.jpg" alt="image" class="rounded-circle">
+                          </div>
+                          <div class="preview-item-content d-flex flex-grow">
+                              <div class="flex-grow">
+                                  <h6 class="preview-subject">Aleena Abraham
+                                      <span class="float-right small">
+                                          <span class="text-muted pr-3">12.06.2017</span>
+                                      </span>
+                                  </h6>
+                                  <p>Hope to see you tomorrow</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <i class="remove fa fa-times-circle"></i>
-                </li>
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Prepare for presentation
-                    </label>
-                  </div>
-                  <i class="remove fa fa-times-circle"></i>
-                </li>
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Resolve all the low priority tickets due today
-                    </label>
-                  </div>
-                  <i class="remove fa fa-times-circle"></i>
-                </li>
-                <li class="completed">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox" checked>
-                      Schedule meeting for next week
-                    </label>
-                  </div>
-                  <i class="remove fa fa-times-circle"></i>
-                </li>
-                <li class="completed">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox" checked>
-                      Project review
-                    </label>
-                  </div>
-                  <i class="remove fa fa-times-circle"></i>
-                </li>
-              </ul>
-            </div>
-            <div class="events py-4 border-bottom px-3">
-              <div class="wrapper d-flex mb-2">
-                <i class="fa fa-times-circle text-primary mr-2"></i>
-                <span>Feb 11 2018</span>
               </div>
-              <p class="mb-0 font-weight-thin text-gray">Creating component page</p>
-              <p class="text-gray mb-0">build a js based app</p>
-            </div>
-            <div class="events pt-4 px-3">
-              <div class="wrapper d-flex mb-2">
-                <i class="fa fa-times-circle text-primary mr-2"></i>
-                <span>Feb 7 2018</span>
-              </div>
-              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
-              <p class="text-gray mb-0 ">Call Sarah Graves</p>
-            </div>
+          </div>
+
+
+
+          
           </div>
           <!-- To do section tab ends -->
-          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+          <div class="tab-pane fade show active" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
             <div class="d-flex align-items-center justify-content-between border-bottom">
-              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
-              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See
-                All</small>
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Updates</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">Date</small>
             </div>
-            <ul class="chat-list">
-              <li class="list active">
-                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Thomas Douglas</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">19 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <div class="wrapper d-flex">
-                    <p>Catherine</p>
+
+            <div class="card">
+              <div class="card-body">
+                  <h4 class="card-title mb-0">Weather Updates</h4>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-inline-block pt-3">
+                          <div class="d-md-flex">
+                              <h2 class="mb-0">32 &#x2103;</h2>
+                              <div class="d-flex align-items-center ml-md-2 mt-2 mt-md-0">
+                                  <i class="far fa-clock text-muted"></i>
+                                  <small class=" ml-1 mb-0">Updated: 9:10am</small>
+                              </div>
+                          </div>
+                          <small class="text-gray">Lira, Uganda</small>
+                      </div>
+                 
                   </div>
-                  <p>Away</p>
-                </div>
-                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
-                <small class="text-muted my-auto">23 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Daniel Russell</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">14 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <p>James Richardson</p>
-                  <p>Away</p>
-                </div>
-                <small class="text-muted my-auto">2 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Madeline Kennedy</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">5 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Sarah Graves</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">47 min</small>
-              </li>
-            </ul>
+              </div>
+          </div>
+            
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="icon-sm fas fa-cloud-download-alt mr-2"></i>
+
+                  News Updates
+                </h4>
+                <ul class="solid-bullet-list">
+                  <li>
+                    <h6>Temperature Sensor</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <p class="text-muted">
+                      <i class="far fa-clock"></i>
+                      2 mins ago.
+                    </p>
+                  </li>
+                  <li>
+                    <h6>Water Level</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <p class="text-muted">
+                      <i class="far fa-clock"></i>
+                      20 mins ago.
+                    </p>
+                  </li>
+                  <li>
+                    <h6>Humidity Sensor</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <p class="text-muted">
+                      <i class="far fa-clock"></i>
+                      30 mins ago.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
           </div>
           <!-- chat tab ends -->
         </div>
@@ -444,8 +445,6 @@
             <div class="collapse" id="govenment">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/government/supportcenters.html">Support centers</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/government/projects.html">Projects</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/government/contact.html">Contact</a></li>
               </ul>
             </div>
           </li>

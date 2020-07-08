@@ -13278,6 +13278,7 @@ input[type="button"].btn-block {
 
 .tab-content > .active {
   display: block;
+  padding: 0 10px;
 }
 
 .navbar {
@@ -13655,6 +13656,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid #e0e0ef;
+  margin-bottom: 5px;
   border-radius: 0.375rem;
 }
 
@@ -20374,8 +20376,7 @@ code {
 }
 
 .img-pk {
-  max-width: 200px;
-  min-width: 40px;
+  max-width: 100px;
 }
 
 .img-xs {
@@ -22588,7 +22589,7 @@ code {
 }
 
 .card.card-statistics {
-  background: linear-gradient(85deg, #04581e, var(--success));
+  background: linear-gradient(85deg, #005603, #0bab00);
   color: #ffffff;
 }
 
@@ -25722,7 +25723,7 @@ dl li {
   width: auto;
   margin: 0;
   padding: 0;
-  background: #392C70;
+  background: #1cad21;
 }
 
 .settings-panel .nav-tabs .nav-item {
@@ -25763,6 +25764,7 @@ dl li {
   max-height: 100vh;
   height: 100%;
   padding-bottom: 150px;
+  padding: 0 10px;
 }
 
 .settings-panel .settings-heading {
